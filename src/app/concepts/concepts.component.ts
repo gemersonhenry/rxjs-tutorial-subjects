@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Subject, BehaviorSubject, ReplaySubject, AsyncSubject, interval, Subscription } from 'rxjs';
+import {
+  Subject, BehaviorSubject, ReplaySubject, AsyncSubject, interval, Subscription
+} from 'rxjs';
 
 @Component({
   selector: 'fp-concepts',
@@ -26,10 +28,10 @@ export class ConceptsComponent implements OnInit {
   // private asyncSubjectSubscription: Subscription;
 
   constructor() {
-    this.subjectObserver = this.subjectObserver.bind(this);
-    this.behaviorSubjectObserver = this.behaviorSubjectObserver.bind(this);
-    this.replaySubjectObserver = this.replaySubjectObserver.bind(this);
-    this.asyncSubjectObserver = this.asyncSubjectObserver.bind(this);
+    // this.subjectObserver = this.subjectObserver.bind(this);
+    // this.behaviorSubjectObserver = this.behaviorSubjectObserver.bind(this);
+    // this.replaySubjectObserver = this.replaySubjectObserver.bind(this);
+    // this.asyncSubjectObserver = this.asyncSubjectObserver.bind(this);
   }
 
   ngOnInit() {
