@@ -1,1 +1,59 @@
-<p>concepts works!</p>
+<p>CONCEPTS ABOUT SUBJECTS</p>
+<p>
+  <button (click)="subscribeSubjectObserver()">
+    Subscribe observer to subject
+  </button>
+</p>
+<p>
+  <button (click)="subscribeBehaviorSubjectObserver()">
+    Subscribe observer to behaviorsubject
+  </button>
+</p>
+<p>
+  <button (click)="subscribeReplaySubjectObserver()">
+    Subscribe observer to replaysubject
+  </button>
+</p>
+<p>
+  <button (click)="subscribeAsyncSubjectObserver()">
+    Subscribe observer to asyncsubject
+  </button>
+  <button (click)="completeAsyncSubjectObserver()">
+    complete asyncsubject
+  </button>
+</p>
+<div>
+  <h1> Counter: {{ currentTimer$ | async }} </h1>
+</div>
+<div>
+  <h2>
+    Subject emmited values:
+    <b *ngFor="let value of subjectEmittedValues">
+      {{ value }}
+    </b>
+  </h2>
+</div>
+<div>
+  <h2>
+    BehaviorSubject emmited values:
+    <b *ngFor="let value of behaviorSubjectEmittedValues">
+      {{ value }}
+    </b>
+  </h2>
+</div>
+<div>
+  <h2>
+    ReplaySubject emmited values:
+    <b *ngFor="let value of replaySubjectEmittedValues">
+      {{ value }}
+    </b>
+  </h2>
+</div>
+<div>
+  <h2>
+    AsyncSubject emmited values:
+    <b *ngFor="let value of asyncSubjectEmittedValues">
+      {{ value }}
+    </b>
+  </h2>
+</div>
